@@ -92,7 +92,7 @@ def general_guidline():
         st.image(G_posture_image, caption="Good Sitting Posture", use_column_width=True)
     with col2:
         st.write("")
-        st.write("")
+        # st.write("")
         B_posture_image = Image.open("W_sitting_pose.png")
         st.image(B_posture_image, caption="Bad Sitting Posture", use_column_width=True)
     st.markdown("---")
