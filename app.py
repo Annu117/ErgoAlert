@@ -1,14 +1,14 @@
 import streamlit as st
-import cv2
-import numpy as np
-import torch
-import matplotlib.pyplot as plt
+# import cv2
+# import numpy as np
+# import torch
+# import matplotlib.pyplot as plt
 import copy
-from utils import model
-from utils import util
-from utils.pose import pose_detector
+# from utils import model
+# from utils import util
+# from utils.pose import pose_detector
 import os
-import pygame
+# import pygame
 import time
 from PIL import Image
 
