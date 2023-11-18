@@ -9,33 +9,38 @@ st.set_page_config(
 # Custom CSS to reduce header space
 custom_css = """
     <style>
-        # .stApp {
-        #     margin-top: -80px;
-            
+        
+        # body {
+        #     font-family: 'Arial', sans-serif;
+        #     background-color: #f5f5f5;
+        #     margin-left: -80px;
+        #     padding: 17px;
+        #     margin-top:  -110px; 
         # }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            margin-left: -70px;
+        .section-title {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        .main {
+            margin-left: -80px; /* Width of the sidebar */
             padding: 20px;
             margin-top:  -110px; 
-        }
-        .main {
-           
 
-            background-color: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            .guidelines-container,
-            .remember-container {
-                margin-top: 20px;
-                background-color: #f9f9f9;
-                padding: 15px;
-                border-radius: 8px;
+            # background-color: #ffffff;
+            # box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            # .guidelines-container,
+            # .remember-container {
+            #     margin-top: 20px;
+            #     background-color: #f9f9f9;
+            #     padding: 15px;
+            #     border-radius: 8px;
         }
         }
     </style>
 """
 st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown('<link rel="stylesheet" type="text/css" href="styles.css">', unsafe_allow_html=True)
 
 def general_guidline():
     st.subheader("Sitting Posture Guidelines")
@@ -53,7 +58,9 @@ def general_guidline():
     # posture_image = Image.open("Ergo_Check1.png")
     # st.image(posture_image, caption="Sitting Posture", use_column_width=True)
     st.markdown("---")
-    st.subheader("Position for Safety and Comfort")
+    # st.subheader("Position for Safety and Comfort")
+    st.markdown("<div class='section-title'>Position for Safety and Comfort</div>", unsafe_allow_html=True)
+
     guidelines = [
         "HEAD level in line with the torso",
         "FOREARMS, WRISTS, and HANDS relaxed and straight",
@@ -67,7 +74,9 @@ def general_guidline():
     for guideline in guidelines:
         st.markdown(f" - {guideline}")
 
-    st.subheader("Remember")
+    # st.subheader("Remember")
+    st.markdown("<div class='section-title'>Remember</div>", unsafe_allow_html=True)
+
     remember_points = [
         "WHEN KEYING, float your hands over the keyboard, and use palm rests between bursts of keying.",
         "WHEN MOUSING, keep your wrists straight, and use the elbow to pivot.",
