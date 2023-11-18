@@ -51,7 +51,7 @@ def home():
 
     st.image("image (2).png", use_column_width=True, caption="Ergonomic Workspace")
 
-    st.markdown("<div class='section-title'>Key Features and Benefits</div>", unsafe_allow_html=True)
+    st.markdown("<div class='section-title'>Key Features</div>", unsafe_allow_html=True)
     st.write(
         "- **Real-time Ergonomic Analysis:** Continuously monitor and analyze users' postures in real-time using computer vision.\n"
         "- **Ergonomic Suggestions:** Receive personalized ergonomic advice based on RULA scores, promoting better posture and reducing risks.\n"
