@@ -16,11 +16,12 @@ custom_css = """
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
+            margin-left: -70px;
+            padding: 20px;
+            margin-top:  -110px; 
         }
         .main {
-            margin-left: -200px; /* Width of the sidebar */
-            padding: 20px;
-            margin-top:  -100px; 
+           
 
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
