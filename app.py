@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import torch
+# import torch
 import matplotlib.pyplot as plt
 import copy
 from utils import model
