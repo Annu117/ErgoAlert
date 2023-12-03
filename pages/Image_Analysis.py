@@ -47,12 +47,9 @@ def ImageAnalysis():
         uploaded_image = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
         if uploaded_image is not None:
             col1, col2 = st.columns(2)
-            # with col1:
-            # img = cv2.imdecode(np.fromstring(uploaded_image.read(), np.uint8), 1)
             img = Image.open(uploaded_image).convert("RGB")
-            img = np.array(img)
             # Pose detection
-            candidate, subset = pose_estimation(img)
+            candidate, subset = pose_estimation(np.array(img))
 
             if len(subset) < 1:
                 st.write("No poses detected in the uploaded image.")
@@ -84,10 +81,9 @@ def ImageAnalysis():
                     y_pred = torch.argmax(y_pred)
                     al_list.append(y_pred.item())
                     with col2:
-
                         st.write(f" {i + 1}th person: {y_pred.item() + 1}")
                 with col1:
-                    # Display the image with results
-                    img = util.pose_vis(img, candidate, subset, al_list)
-                    st.image(img, channels="BGR")
+                    img_array = util.pose_vis(np.array(img), candidate, subset, al_list)
+                    img = Image.fromarray(img_array)
+                    st.image(img, channels="RGB")
 ImageAnalysis()
