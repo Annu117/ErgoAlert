@@ -8,6 +8,8 @@ from utils import model
 from utils import util
 from utils.pose import pose_detector
 import os
+from PIL import Image
+
 st.set_page_config(
     page_title="Real-time Risk Monitor",
     page_icon="E_logo1.png",
@@ -46,8 +48,9 @@ def ImageAnalysis():
         if uploaded_image is not None:
             col1, col2 = st.columns(2)
             # with col1:
-            img = cv2.imdecode(np.fromstring(uploaded_image.read(), np.uint8), 1)
-
+            # img = cv2.imdecode(np.fromstring(uploaded_image.read(), np.uint8), 1)
+            img = Image.open(uploaded_image).convert("RGB")
+            img = np.array(img)
             # Pose detection
             candidate, subset = pose_estimation(img)
 
