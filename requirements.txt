@@ -1,9 +1,3 @@
-#streamlit
-#opencv-python
-#matplotlib
-#numpy
-#torch
-
 numpy==1.21.0
 matplotlib==3.4.2
 Pillow==8.2.0
