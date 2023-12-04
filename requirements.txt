@@ -6,3 +6,4 @@ scipy
 streamlit
 opencv-python
 pygame
+torchvision
