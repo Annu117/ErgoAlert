@@ -144,7 +144,7 @@ def report():
             "\n\n- Take regular breaks every 30 minutes for stretching and changing positions."
         )
     elif rula_score == 3:
-        st.markdown("<div class='section-title'>High ergonomic risk detected!</div>", unsafe_allow_html=True)
+        st.markdown("<div class='section-title'>Immediate intervention required!</div>", unsafe_allow_html=True)
         st.markdown(
             "\n\n- **Address Visible Ergonomic Issues:** Identify and rectify any visible ergonomic issues with your chair, desk, or computer setup."
             "\n\n- **Perform Exercises and Stretches:** Incorporate exercises and stretches into your routine to relieve tension and improve your posture. Focus on neck, shoulder, and back stretches."
@@ -152,7 +152,7 @@ def report():
             "\n\n- **Consult with an Ergonomic Professional:** Consider consulting with an ergonomic professional for personalized advice. They can provide specific recommendations based on your workspace and habits."
         )
     elif rula_score == 4:
-        st.markdown("<div class='section-title'>Immediate intervention required!</div>", unsafe_allow_html=True)
+        st.markdown("<div class='section-title'>High ergonomic risk detected!</div>", unsafe_allow_html=True)
         st.markdown(
             "\n\n- **Professional Ergonomic Assessment:** Consider a professional ergonomic assessment to identify and rectify specific issues. A professional can provide tailored solutions based on your unique needs."
             "\n\n- **Use Alternative Workstations:** Explore alternative workstations such as standing desks, if possible. Alternate between sitting and standing to reduce prolonged sitting."
