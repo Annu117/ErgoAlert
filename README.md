@@ -7,6 +7,6 @@
 ## Future Scope
 - This can be used to calculate an average score of real time seating and then suggest changes in either the chair or the posture part which is significantly giving such high alerting scores.
 - These can be used to personalise a chair and test and analyse them , on a personal product like chair/any sitting-related posture item.
-- 
+- For more [paper](G13_EFD_Project_Paper.pdf)
 <img width="912" alt="image (4)" src="https://github.com/Annu117/Ergonomic_Risk/assets/108427028/1f9ac04d-2bf6-4084-87b5-b67d4019ef97">
 <img width="533" alt="image (3)" src="https://github.com/Annu117/Ergonomic_Risk/assets/108427028/0f804be0-f439-4d6c-bf7d-69672c35d5a0">
