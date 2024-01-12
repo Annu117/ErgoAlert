@@ -67,7 +67,7 @@ def home():
     # Contact Us Section
     st.markdown("<div class='section-title'>Contact Us</div>", unsafe_allow_html=True)
     st.write(
-        "For any questions, feedback, or support, feel free to contact us at [contact@ergoguard.com](mailto:contact@ergoguard.com).\n"
+        "For any questions, feedback, or support, feel free to contact us at [contact@ergoalert.com](mailto:contact@ergoalert.com).\n"
         "We value your input and are here to assist you in creating a safer and more ergonomic workplace."
     )
 
