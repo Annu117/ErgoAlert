@@ -1,36 +1,32 @@
 import numpy as np
 import math
-# import cv2
+import cv2
 import matplotlib
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 import numpy as np
 import matplotlib.pyplot as plt
-from PIL import Image, ImageDraw, ImageFont
+import cv2
 
 def padding(img, stride, padValue):
-    if isinstance(img, Image.Image):
-        h, w = img.size
-        img_padded = img.crop((-pad[1], -pad[0], w + pad[3], h + pad[2]))
-    else:
-        h, w = img.shape[:2]
-        pad = 4 * [None]
-        pad[0] = 0  # up
-        pad[1] = 0  # left
-        pad[2] = 0 if (h % stride == 0) else stride - (h % stride)  # down
-        pad[3] = 0 if (w % stride == 0) else stride - (w % stride)  # right
+    h = img.shape[0]
+    w = img.shape[1]
 
-        img_padded = Image.fromarray(img)
-        img_padded = img_padded.crop((-pad[1], -pad[0], w + pad[3], h + pad[2]))
+    pad = 4 * [None]
+    pad[0] = 0 # up
+    pad[1] = 0 # left
+    pad[2] = 0 if (h % stride == 0) else stride - (h % stride) # down
+    pad[3] = 0 if (w % stride == 0) else stride - (w % stride) # right
 
-    pad_up = np.tile(np.array(img_padded)[0:1, :, :] * 0 + padValue, (pad[0], 1, 1))
-    img_padded = np.concatenate((pad_up, np.array(img_padded)), axis=0)
-    pad_left = np.tile(np.array(img_padded)[:, 0:1, :] * 0 + padValue, (1, pad[1], 1))
-    img_padded = np.concatenate((pad_left, np.array(img_padded)), axis=1)
-    pad_down = np.tile(np.array(img_padded)[-2:-1, :, :] * 0 + padValue, (pad[2], 1, 1))
-    img_padded = np.concatenate((np.array(img_padded), pad_down), axis=0)
-    pad_right = np.tile(np.array(img_padded)[:, -2:-1, :] * 0 + padValue, (1, pad[3], 1))
-    img_padded = np.concatenate((np.array(img_padded), pad_right), axis=1)
+    img_padded = img
+    pad_up = np.tile(img_padded[0:1, :, :]*0 + padValue, (pad[0], 1, 1))
+    img_padded = np.concatenate((pad_up, img_padded), axis=0)
+    pad_left = np.tile(img_padded[:, 0:1, :]*0 + padValue, (1, pad[1], 1))
+    img_padded = np.concatenate((pad_left, img_padded), axis=1)
+    pad_down = np.tile(img_padded[-2:-1, :, :]*0 + padValue, (pad[2], 1, 1))
+    img_padded = np.concatenate((img_padded, pad_down), axis=0)
+    pad_right = np.tile(img_padded[:, -2:-1, :]*0 + padValue, (1, pad[3], 1))
+    img_padded = np.concatenate((img_padded, pad_right), axis=1)
 
     return img_padded, pad
 
@@ -51,38 +47,25 @@ def npmax(array):
 
 # pose vis
 def pose_vis(img, candidate, subset, al_list):
-    img = Image.fromarray(img)
-    draw = ImageDraw.Draw(img)
+    # point color
     pose_color = np.random.rand(len(subset), 3) * 255
 
+    # plot point
     for i in range(len(subset)):
         mid_x1 = candidate[subset[i][8].astype(int)][0]
         mid_x2 = candidate[subset[i][11].astype(int)][0]
         mid_y1 = candidate[subset[i][8].astype(int)][1]
         mid_y2 = candidate[subset[i][11].astype(int)][1]
-        mid_x = int((mid_x1 + mid_x2) / 2)
-        mid_y = int((mid_y1 + mid_y2) / 2)
-
-        text_size = 72  
-        font = ImageFont.truetype("arial.ttf", text_size)
-        text_to_display = str(i + 1)
-        # text_color = (0, 128, 0)  # Default color -> Green
-        text_color = (0, 255, 0)
-        if text_to_display == '3':
-            text_color = (255, 165, 0)  # Orange
-        elif text_to_display == '4':
-            text_color = (255, 0, 0)  # Red
-
-        draw.text((mid_x, mid_y), text_to_display, fill=text_color, font=font)        
+        mid_x = (mid_x1 + mid_x2) / 2
+        mid_y = (mid_y1 + mid_y2) / 2
+        img = cv2.putText(img, str(i+1), (mid_x.astype(int), mid_y.astype(int)),
+                          cv2.FONT_HERSHEY_COMPLEX,2,pose_color[i],5)
         for jj in range(18):
             if subset[i][jj] > -1:
-                point_x = int(candidate[subset[i][jj].astype(int)][0])
-                point_y = int(candidate[subset[i][jj].astype(int)][1])
+                img = cv2.circle(img, (candidate[subset[i][jj].astype(int)][0].astype(int),
+                                       candidate[subset[i][jj].astype(int)][1].astype(int)),
+                                 radius=4, color=pose_color[i], thickness=2)
 
-                ellipse_size = 5  
-                draw.ellipse([(point_x - ellipse_size, point_y - ellipse_size),
-                            (point_x + ellipse_size, point_y + ellipse_size)],
-                            fill=tuple(map(int, pose_color[i])))
 
-    img_array = np.array(img)
-    return img_array
+    return img
+
