@@ -1,3 +1,9 @@
+Download pose_coco.pth file from the below link
+https://drive.google.com/file/d/1Uskkv0Ge1Pq-Oh_1AACHHfrj2fg0A4nv/view?usp=sharing
+Place this in the weights directory.
+
+Uncomment pages/Image_Analysis.py and Real_Time_Moniter.py
+Run below command on terminal-
+py -3 -m pip install -r requirements.txt
 python -m streamlit run app.py
 
-py -3 -m pip install -r requirements.txt
