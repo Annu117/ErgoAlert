@@ -4,12 +4,12 @@
 
 ### Features:
 
-**Feature 1: Real-Time RULA Score Calculation and Monitoring**
+**1: Real-Time RULA Score Calculation and Monitoring**
 - Calculate your RULA (Rapid Upper Limb Assessment) score in real-time.
 - Enable risk sound alerts to monitor your posture over an extended period.
 - Check your risk level duration.
 
-**Feature 2: RULA Score Calculation via Image Upload**
+**2: RULA Score Calculation via Image Upload**
 - Upload an image to calculate the RULA level score.
 - Utilize the risk guidelines to perform further inspections based on the score obtained from the image analysis.
 
