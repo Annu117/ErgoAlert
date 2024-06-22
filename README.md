@@ -1,12 +1,40 @@
-﻿# Ergonomic-Risk-Analysis using RULA score
- ## Course Project for Ergonomic Factors Affecting Design
- - Feature 1 - Calculate your RULA Score in real-time, and then get alerts by allowing the risk sound ON
- - Feature 2 -  Calculate the RULA Level Scor by uploading an Image
- - By calculating the scores for the image one can use the risk guidelines, to analyse further inspection over the score
- - General Guidelines of the page discusses some "advised" yoga-postures to take in between the brakes, while working and it also has some general seating and posture guidelines
-## Future Scope
-- This can be used to calculate an average score of real time seating and then suggest changes in either the chair or the posture part which is significantly giving such high alerting scores.
-- These can be used to personalise a chair and test and analyse them , on a personal product like chair/any sitting-related posture item.
-- For more [paper](G13_EFD_Project_Paper.pdf)
+# ErgoAlert - Ergonomic Risk Analysis using RULA Score
+
+## Course Project for Ergonomic Factors Affecting Design
+
+### Features:
+
+**Feature 1: Real-Time RULA Score Calculation and Monitoring**
+- Calculate your RULA (Rapid Upper Limb Assessment) score in real-time.
+- Enable risk sound alerts to monitor your posture over an extended period.
+- Check your risk level duration.
+
+**Feature 2: RULA Score Calculation via Image Upload**
+- Upload an image to calculate the RULA level score.
+- Utilize the risk guidelines to perform further inspections based on the score obtained from the image analysis.
+
+### General Guidelines:
+
+This section provides advice on maintaining proper posture and ergonomics while working. It includes:
+- Recommended yoga postures to practice during breaks.
+- General seating and posture guidelines to minimize ergonomic risk.
+
+---
+
+### Instructions
+
+Refer to the `instructions.txt` file for detailed steps on how to run the code.
+
+---
+### Future Scope:
+
+- **Average Score Calculation**: Calculate an average score of real-time seating positions and suggest changes to either the chair or specific posture elements that contribute to high alert scores.
+- **Personalized Ergonomic Solutions**: Use the data to personalize a chair and test and analyze it, tailoring it to individual needs for optimal ergonomic support. This could be applied to any sitting-related posture item to enhance comfort and reduce ergonomic risks.
+
+---
+
+This project aims to enhance ergonomic awareness and improve workplace posture, reducing the risk of musculoskeletal disorders.
+
+For more details, refer to the [paper](G13_EFD_Project_Paper.pdf)
 <img width="912" alt="image (4)" src="https://github.com/Annu117/Ergonomic_Risk/assets/108427028/1f9ac04d-2bf6-4084-87b5-b67d4019ef97">
 <img width="533" alt="image (3)" src="https://github.com/Annu117/Ergonomic_Risk/assets/108427028/0f804be0-f439-4d6c-bf7d-69672c35d5a0">
