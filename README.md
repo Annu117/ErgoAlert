@@ -1,6 +1,6 @@
 # ErgoAlert - Ergonomic Risk Analysis using RULA Score
 
-## Course Project for Ergonomic Factors Affecting Design
+## Course Project for Ergonomics/Human factors for Design
 
 ### Features:
 
