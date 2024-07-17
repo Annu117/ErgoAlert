@@ -27,7 +27,7 @@ custom_css = """
             .main {
                 margin-left: -80px;
                 padding: 20px;
-                margin-top:  -110px; 
+                margin-top:  -80px; 
             }
             .section-title {
             font-size: 20px;
