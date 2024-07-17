@@ -9,7 +9,7 @@ custom_css = """
             .main {
                 margin-left: -80px;
                 padding: 20px;
-                margin-top:  -110px; 
+                margin-top:  -80px; 
             }
             body {
                 font-family: 'Arial', sans-serif;
