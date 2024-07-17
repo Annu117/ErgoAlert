@@ -14,7 +14,7 @@ def home():
                 .main {
                     margin-left: -70px;
                     padding: 20px;
-                    margin-top:  -110px; 
+                    margin-top:  -80px; 
                 }
                 .section-title {
                     font-size: 24px;
