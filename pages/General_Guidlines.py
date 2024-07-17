@@ -15,7 +15,7 @@ custom_css = """
         #     background-color: #f5f5f5;
         #     margin-left: -80px;
         #     padding: 17px;
-        #     margin-top:  -110px; 
+        #     margin-top:  -80px; 
         # }
         .section-title {
                 font-size: 20px;
