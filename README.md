@@ -2,14 +2,14 @@
 
 ## Course Project for Ergonomics/Human factors for Design
 
-### Features:
+### Features
 
-**1: Real-Time RULA Score Calculation and Monitoring**
+**1. Real-Time RULA Score Calculation and Monitoring**
 - Calculate your RULA (Rapid Upper Limb Assessment) score in real-time.
 - Enable risk sound alerts to monitor your posture over an extended period.
 - Check your risk level duration.
 
-**2: RULA Score Calculation via Image Upload**
+**2. RULA Score Calculation via Image Upload**
 - Upload an image to calculate the RULA level score.
 - Utilize the risk guidelines to perform further inspections based on the score obtained from the image analysis.
 
@@ -23,12 +23,11 @@ This section provides advice on maintaining proper posture and ergonomics while 
 
 ### Instructions
 
-Refer to the `instructions.txt` file for detailed steps on how to run the code.
+Refer to the `instructions.txt` file for a detailed step-up.
 
 ---
 ### Future Scope:
 
-- **Average Score Calculation**: Calculate an average score of real-time seating positions and suggest changes to either the chair or specific posture elements that contribute to high alert scores.
 - **Personalized Ergonomic Solutions**: Use the data to personalize a chair and test and analyze it, tailoring it to individual needs for optimal ergonomic support. This could be applied to any sitting-related posture item to enhance comfort and reduce ergonomic risks.
 
 ---
