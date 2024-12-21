@@ -13,7 +13,7 @@
 - Upload an image to calculate the RULA level score.
 - Utilize the risk guidelines to perform further inspections based on the score obtained from the image analysis.
 
-### General Guidelines:
+### General Guidelines
 
 This section provides advice on maintaining proper posture and ergonomics while working. It includes:
 - Recommended yoga postures to practice during breaks.
@@ -26,7 +26,7 @@ This section provides advice on maintaining proper posture and ergonomics while 
 Refer to the `instructions.txt` file for a detailed step-up.
 
 ---
-### Future Scope:
+### Future Scope
 
 - **Personalized Ergonomic Solutions**: Use the data to personalize a chair and test and analyze it, tailoring it to individual needs for optimal ergonomic support. This could be applied to any sitting-related posture item to enhance comfort and reduce ergonomic risks.
 
