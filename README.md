@@ -5,9 +5,9 @@
 ### Features
 
 **1. Real-Time RULA Score Calculation and Monitoring**
-- Calculate your RULA (Rapid Upper Limb Assessment) score in real-time.
-- Enable risk sound alerts to monitor your posture over an extended period.
-- Check your risk level duration.
+- Calculate RULA (Rapid Upper Limb Assessment) score in real-time.
+- Enable risk sound alerts to monitor posture over an extended period.
+- Check risk level duration.
 
 **2. RULA Score Calculation via Image Upload**
 - Upload an image to calculate the RULA level score.
@@ -16,7 +16,7 @@
 ### General Guidelines
 
 This section provides advice on maintaining proper posture and ergonomics while working. It includes:
-- Recommended yoga postures to practice during breaks.
+- Yoga postures are recommended for practice during breaks.
 - General seating and posture guidelines to minimize ergonomic risk.
 
 ---
@@ -28,7 +28,7 @@ Refer to the `instructions.txt` file for a detailed step-up.
 ---
 ### Future Scope
 
-- **Personalized Ergonomic Solutions**: Use the data to personalize a chair and test and analyze it, tailoring it to individual needs for optimal ergonomic support. This could be applied to any sitting-related posture item to enhance comfort and reduce ergonomic risks.
+- **Personalized Ergonomic Solutions**: Use the data to personalize a chair, test and analyze it, tailoring it to individual needs for optimal ergonomic support. This could be applied to any sitting-related posture item to enhance comfort and reduce ergonomic risks.
 
 ---
 
