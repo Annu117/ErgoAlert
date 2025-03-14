@@ -78,7 +78,7 @@ def general_guidline():
     st.markdown("<div class='section-title'>Remember</div>", unsafe_allow_html=True)
 
     remember_points = [
-        "WHEN TYPING, float your hands over the keyboard, and use palm rests between bursts of keying.",
+        "WHEN USING KEYBOARD, float your hands over the keyboard and use palm rests between bursts of keying.",
         "WHEN USING MOUSE, keep your wrists straight and use the elbow to pivot.",
         "ADJUST your chair to fit you, if possible.",
         "CHANGE your working position often throughout the day, stretching your fingers, hands, arms, and torso, and by standing and walking around for a few minutes periodically."
